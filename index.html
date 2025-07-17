@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensa Bestellung</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light">
+
+
+<!-- LOGIN-Bereich -->
+<div id="login-container" class="container mt-5">
+  <h2 class="mb-4">Login</h2>
+  <div class="mb-3">
+    <label for="username" class="form-label">Benutzername</label>
+    <input type="text" id="username" class="form-control" placeholder="z. B. admin" />
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Passwort</label>
+    <input type="password" id="password" class="form-control" placeholder="••••••••" />
+  </div>
+  <button onclick="login()" class="btn btn-success">Einloggen</button>
+  <p id="login-error" class="text-danger mt-3" style="display: none;">❌ Falsche Zugangsdaten</p>
+</div>
+
+<div id="app" style="display: none;"> <!--login-->
+  <div class="container py-4">
+    <h1 class="text-center mb-4 text-primary"><i class="fas fa-utensils"></i> Mensa Bestellung</h1>
+
+    <div class="row g-4">
+      <!-- Menükarte -->
+      <div class="col-md-8">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="menu">
+          <!-- JS befüllt das Menü hier -->
+        </div>
+      </div>
+
+      <!-- Warenkorb -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <i class="fas fa-shopping-cart"></i> Meine Bestellung
+          </div>
+          <ul class="list-group list-group-flush" id="cart-list">
+            <li class="list-group-item text-muted text-center">Keine Artikel</li>
+          </ul>
+          <div class="card-footer">
+            <strong id="total">Gesamt: 0,00€</strong>
+            <button class="btn btn-success w-100 mt-2" onclick="checkout()">
+              <i class="fas fa-check-circle"></i> Bestellen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hier kommt dein bisheriger HTML-Inhalt rein -->
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

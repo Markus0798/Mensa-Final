@@ -1,0 +1,13 @@
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease;
+}
+
+.menu-price {
+  background: linear-gradient(135deg, #20c997, #0dcaf0);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  float: right;
+}
