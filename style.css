@@ -1,13 +1,18 @@
-.card:hover {
-  transform: scale(1.02);
-  transition: 0.2s ease;
+.login-logo {
+  max-width: 200px;
+  height: auto;
 }
-
-.menu-price {
-  background: linear-gradient(135deg, #20c997, #0dcaf0);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.9em;
-  float: right;
+.order-background {
+  background-image: url('Assets/Mensa_Landshut.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  backdrop-filter: brightness(0.9);
+}
+.order-background .container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
 }
