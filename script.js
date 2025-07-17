@@ -1,12 +1,14 @@
 // Menü-Daten: Liste aller verfügbaren Speisen mit Namen und Preis
 const menu = [
-  { name: "Schnitzel", price: 4.2 },
-  { name: "Veggie Pasta", price: 3.8 },
-  { name: "Lachs mit Reis", price: 5.5 },
-  { name: "Vegane Bowl", price: 3.2 },
-  { name: "Kaffee", price: 2.5 },
-  { name: "Backwaren", price: 1.2 }
+  { name: "Spaghetti Napoli (vegan)", price: 3.60 },
+  { name: "Rahmgemüse mit Rösti", price: 3.90 },
+  { name: "Schweinebraten mit Dunkelbiersoße, Kartoffelknödel", price: 5.70 },
+  { name: "Chili sin Carne (vegan)", price: 3.80 },
+  { name: "Hähnchensteak mit Reis und Gemüse", price: 5.20 },
+  { name: "Kartoffelsuppe mit Brot (vegan)", price: 2.90 },
+  { name: "Kaiserschmarrn mit Apfelmus", price: 3.50 }
 ];
+
 
 // Warenkorb (dynamisch befüllte Liste)
 let cart = [];
